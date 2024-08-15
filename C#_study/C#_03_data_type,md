@@ -1,0 +1,9 @@
+```c#
+  bool a;  // 0 1
+  sbyte b; // 부호 있는 8비트 정수 = 1byte
+  byte c;  // 부호 없는 8비트 정수 = 1byte
+  int d;   // 부호 있는 32비트 정수 = 4byte
+  uint e;  // 부호가 없는 32비트 정수 = 4byte
+  long f;  // 부호가 있는 64비트 정수 = 8byte
+  ulong g; // 부호가 없는 64비트 정수 = 8byte
+```
