@@ -1,0 +1,72 @@
+================================================================
+APEX ACADEMY - 사이트 전체 구조 및 개요
+================================================================
+
+[ 사이트 정보 ]
+URL: https://apex-4ih.pages.dev/
+호스팅: Cloudflare Pages
+빌드 도구: Vite (React 기반 SPA)
+스타일링: Tailwind CSS
+애니메이션: Framer Motion (AnimatePresence 페이지 전환)
+라우터: React Router v6
+
+[ 배경 음악 ]
+파일: https://mku1.uk/I/StompStompClap.mp3
+루프: 활성화
+볼륨: 0.4
+
+[ 테마 색상 ]
+- vought-dark  : 어두운 배경 계열
+- vought-blue  : 파란 계열
+- nano-cyan    : 시안 계열
+- resistance-red : 빨간 계열
+- neon-purple  : 보라 계열
+- crime-yellow : 노란 계열
+
+[ JS 번들 구조 ]
+메인 앱:   /assets/index-DberZvdJ.js
+Vendor:    vendor-react, vendor-motion, vendor-ui
+
+================================================================
+네비게이션 메뉴 (5개 항목)
+================================================================
+
+메뉴명     경로         페이지 컴포넌트
+------     ----         ---------------
+LOBBY    → /home      → HomePage
+ARCHIVE  → /world     → WorldPage
+SYSTEM   → /system    → SystemPage
+OPS      → /map       → MapPage
+ROSTER   → /database  → DatabasePage
+
+[ 진입 경로 ]
+/  →  Intro (인트로 화면) → 이후 /home 으로 이동
+
+================================================================
+페이지별 설명
+================================================================
+
+1. INTRO (/)
+   - 진입 시 인트로 화면 표시
+   - 이후 메인 홈으로 자동 전환 또는 클릭으로 이동
+
+2. LOBBY (/home) - HomePage
+   - 메인 홈 화면
+   - 뉴스 속보 티커 표시 (하단 스크롤 자막)
+   - 주요 뉴스/이벤트 배치
+
+3. ARCHIVE (/world) - WorldPage
+   - 6개의 도시에 카드 목록
+   - 4개 PUBLIC + 2개 SEALED
+   - 하단 뉴스 티커 포함
+
+4. SYSTEM (/system) - SystemPage
+   - 시스템 관련 정보 (상세 미확인, lazy-load)
+
+5. OPS (/map) - MapPage
+   - 지도/작전 관련 화면 (상세 미확인, lazy-load)
+
+6. ROSTER (/database) - DatabasePage
+   - 데이터베이스/명단 화면 (상세 미확인, lazy-load)
+
+================================================================
